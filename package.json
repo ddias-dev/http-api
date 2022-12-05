@@ -1,6 +1,6 @@
 {
   "name": "http-api",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Diego Dias <ddias.dev@gmail.com>",
   "license": "MIT",
   "bin": "bin/http-api.js",
