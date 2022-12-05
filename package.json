@@ -1,0 +1,47 @@
+{
+  "name": "http-api",
+  "version": "0.1.0",
+  "author": "Diego Dias <ddias.dev@gmail.com>",
+  "license": "MIT",
+  "bin": "bin/http-api.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.53.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.53.0-alpha.0",
+    "@types/aws-lambda": "^8.10.109",
+    "@types/jest": "^27.5.2",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "aws-cdk": "2.53.0",
+    "aws-lambda": "^1.0.7",
+    "jest": "^27.5.1",
+    "prettier": "^2.8.0",
+    "semantic-release": "^19.0.5",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.9.1",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.53.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "packageManager": "yarn@3.3.0"
+}
